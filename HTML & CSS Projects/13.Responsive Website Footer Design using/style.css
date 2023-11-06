@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100vw; 
+    font-family: 'Poppins';
+}
+
+
+
+.outer_container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 5, 67);
+    margin-top: 480px;
+}
+
+ /* -------------------    Section - 1    ------------------- */
+
+.outer_container .head{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: rgb(5, 5, 67);
+    padding: 20px 60px;
+    border-bottom: 1px solid white;
+}
+
+.outer_container .head .inner{
+    font-size: 20px;
+    color: white;
+}
+
+.outer_container .head .social{
+    font-size: 20px;
+    color: white;
+}
+.outer_container .head .social i{
+    padding: 8px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+
+/* -------------------    Section - 2    ------------------- */
+
+.outer_container .main{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 5, 67);
+    border-bottom: 1px solid white;
+    position: absolute;
+    width: 100vw;
+    padding: 20px 10px;
+    padding-left: 40px;
+}
+
+.outer_container .main .top_head{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 10px;
+    width: 100vw;
+}
+.outer_container .main .top_head h5{
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.outer_container .main .top_head span{
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+}
+.outer_container .main .top_head p{
+    font-size: 12px;
+    padding-top: 5px;
+    font-weight: 300;
+}
+.outer_container .main .top_head .line{
+    padding-top: 10px;
+}
+.outer_container .main .top_head p a{
+    color: rgba(255, 255, 255, 0.573);
+    text-decoration: none;
+}
+
+.outer_container .main .line input{
+    height: 25px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.outer_container .main .line-1{
+    margin-top: 5px;
+}
+
+.outer_container .main .line-1 input{
+    height: 25px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid rgb(255, 254, 254);
+    text-align: center;
+    border-radius: 2px;
+}
+
+/* -------------------    Section - 3    ------------------- */
+
+.outer_container .copy-right{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: rgb(5, 5, 67);
+    color: white;
+    font-size: 10px;
+    width: 100vw;
+    margin-top: 190px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.outer_container .copy-right .left{
+    padding: 20px;
+    word-spacing: 3px;
+}
+.outer_container .copy-right .right{
+    padding: 20px;
+    word-spacing: 3px;
+    display: flex;
+}
+.outer_container .copy-right .right p{
+    padding-left: 10px;
+}
+
+/* -------------------    Responsive    ------------------- */
+@media (max-width: 700px ) {
+
+    body{
+        margin: 25px 25px 25px 25px;
+        transition: all 0.22s ;
+    }
+    .outer-containar{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+
+    .main{
+        display: flex;
+        justify-content:center;
+    }
+    
+    .copy-right{
+        display: flex;
+        justify-content:center;
+    }
+    
+}

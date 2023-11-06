@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(58,121,118,1) 0%, rgba(157,212,177,1) 90.1% );
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+::selection{
+    background: rgba(238, 130, 238, 0.388)
+}
+
+.outer_container{
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.outer_container header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.outer_container .line{
+    position: absolute;
+    border-bottom: 4px solid palevioletred;
+    width: 33px;
+    margin-top: -7px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.outer_container .inner_layout{
+    text-align: center;
+    margin-top: 10px
+}
+
+.outer_container .inner_layout .information input{
+    width: 270px;
+    height: 30px;
+    outline: none;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid rgba(196, 198, 200, 0.452);
+}
+.outer_container .inner_layout .information input:focus{
+    border-bottom: 2px solid rgb(207, 5, 248);
+    transition: all 1.7s ease;
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+.outer_container .inner_layout .btn{
+    margin-top: 20px;
+}
+.outer_container .inner_layout .btn input{
+    height: 40px;
+    width: 270px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(58,121,118,1) 0%, rgba(157,212,177,1) 90.1% );
+    border-radius: 5px;
+    color: white;
+    border: none;
+
+}
+.outer_container .inner_layout .btn input:focus{
+    transition: all 0.42s;
+    transform: scale(0.9);
+}
+
+.outer_container .inner_layout p{
+    margin: 15px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.outer_container .inner_layout .btn_1{
+    height: 40px;
+    width: 270px;
+    border: none;
+    background-color: #1DA1F2;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    text-align: start;
+    padding-left: 15px;
+}
+
+.outer_container .inner_layout .btn_1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.outer_container .inner_layout .btn_2{
+    height: 40px;
+    width: 270px;
+    border: none;
+    background-color: #1877F2;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    text-align: start;
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+
+.outer_container .inner_layout .btn_2 a{
+    text-decoration: none;
+    color: white;
+}

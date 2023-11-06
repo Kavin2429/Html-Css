@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer_layout{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.outer_layout nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.outer_layout nav label{
+    margin: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    color: #8e44ad;
+    cursor: pointer;
+    position: relative;
+}
+
+.outer_layout nav label:hover{
+    background-color: rgba(44, 171, 171, 0.285);
+    border-radius: 5px;
+    transition: all 0.42s;
+}
+
+.outer_layout nav label i{
+    padding-right: 8px;
+}
+
+.outer_layout nav .slider{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: #8e44ad;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.outer_layout input{
+    display: none;
+}
+
+#home:checked ~  nav label.home,
+#blog:checked ~  nav label.blog,
+#code:checked ~  nav label.code,
+#help:checked ~  nav label.help,
+#about:checked ~  nav label.about{
+    color: #fff;
+} 
+
+#blog:checked ~ nav .slider{
+    left: 20%;
+} 
+#code:checked ~ nav .slider{
+    left: 40%;
+} 
+#help:checked ~ nav .slider{
+    left: 60%;
+} 
+#about:checked ~ nav .slider{
+    left: 80%;
+} 

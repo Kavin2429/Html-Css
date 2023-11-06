@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(179, 140, 191, 0.516);
+    font-family: 'Poppins';
+}
+
+.outer{
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    height: 58%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.outer .content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.outer .content .left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.outer .content .left img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 100%;
+    width: -5%;
+}
+
+.outer .content .right{
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.outer .content .right h3{
+    font-size: 18px;
+    color: rgb(202, 10, 240);
+    font-weight: 500;
+}
+
+.outer .content .right .user{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.outer .content .right input{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 15px;
+    background-color: #db3edb28;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.outer .content .right form .user input:focus{
+    border: 2px solid #ff01ff;
+    outline: none;
+}
+
+.outer .content .right form .user span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 20px 0px;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #787878d1;
+    
+}
+
+.outer .content .right form .user input:focus ~span{
+    transform: translateX(10px) translateY(-1px);
+    padding: 0 8px;
+    background-color:#ff01ff;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    border: 1px solid #ff01ff;
+}
+
+
+.outer .content .right textarea{
+    margin-top: 10px;
+    width: 95%;
+    height: 150px;
+    background-color: #db3edb28;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.outer .content .right .login input{
+    color: #fff;
+    background-color:  rgb(202, 10, 240);
+    font-size: 15px;
+}
+
+@media (max-width:2890px) {
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .outer .content .left{
+        width: 150%;
+        height: 100%;
+    
+    }
+    .outer .content .left img{
+        padding: 20px 30px;
+        margin-left: 30px;
+        height: 90%;
+        width: 100%;
+    }
+
+    .outer .content .right{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items:flex-start;
+        margin-top: 10%;
+        margin-right: 20px;
+    }
+    .outer .content .right h3{
+        font-size: 40px;
+    }
+
+    .outer .content .right input{
+        height: 85px;
+        width: 95%;
+        margin-top: 20px;
+        padding-left: 15px;
+        font-size: 25px;
+    }
+    
+    .outer .content .right textarea{
+        margin-top: 20px;
+        width: 95%;
+        height: 300px;
+        padding: 15px;
+        font-size: 25px;
+    }
+    
+    .outer .content .right .login input{
+        color: #fff;
+        background-color:  rgb(202, 10, 240);
+        font-size: 25px;
+    }
+}
+@media (max-width:2560px) {
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .outer .content .left{
+        width: 150%;
+        height: 100%;
+    
+    }
+    .outer .content .left img{
+        padding: 20px 30px;
+        margin-left: 30px;
+        height: 90%;
+        width: 100%;
+    }
+
+    .outer .content .right{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items:flex-start;
+        margin-top: 10%;
+        margin-right: 20px;
+    }
+    .outer .content .right h3{
+        font-size: 40px;
+    }
+
+    .outer .content .right input{
+        height: 85px;
+        width: 95%;
+        margin-top: 20px;
+        padding-left: 15px;
+        font-size: 25px;
+    }
+    
+    .outer .content .right textarea{
+        margin-top: 20px;
+        width: 95%;
+        height: 300px;
+        padding: 15px;
+        font-size: 25px;
+    }
+    
+    .outer .content .right .login input{
+        color: #fff;
+        background-color:  rgb(202, 10, 240);
+        font-size: 25px;
+    }
+}
+@media (max-width:2300px) {
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .outer .content .left{
+        width: 150%;
+        height: 100%;
+    
+    }
+    .outer .content .left img{
+        padding: 20px 30px;
+        margin-left: 30px;
+        height: 90%;
+        width: 100%;
+    }
+
+    .outer .content .right{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items:flex-start;
+        margin-top: 10%;
+        margin-right: 20px;
+    }
+    .outer .content .right h3{
+        font-size: 40px;
+    }
+
+    .outer .content .right input{
+        height: 85px;
+        width: 95%;
+        margin-top: 20px;
+        padding-left: 15px;
+        font-size: 25px;
+    }
+    
+    .outer .content .right textarea{
+        margin-top: 20px;
+        width: 95%;
+        height: 300px;
+        padding: 15px;
+        font-size: 25px;
+    }
+    
+    .outer .content .right .login input{
+        color: #fff;
+        background-color:  rgb(202, 10, 240);
+        font-size: 25px;
+    }
+}
+@media (max-width:1600px) {
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .outer .content .left{
+        width: 150%;
+        height: 100%;
+    
+    }
+    .outer .content .left img{
+        padding: 20px 30px;
+        margin-left: 30px;
+        height: 90%;
+        width: 100%;
+    }
+
+    .outer .content .right{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items:flex-start;
+        margin-top: 35px;
+    }
+    .outer .content .right h3{
+        font-size: 18px;
+    }
+
+    .outer .content .right input{
+        height: 40px;
+        width: 95%;
+        margin-top: 10px;
+        padding-left: 15px;
+        font-size: 13px;
+    }
+    
+    .outer .content .right textarea{
+        margin-top: 10px;
+        width: 95%;
+        height: 150px;
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .outer .content .right .login input{
+        color: #fff;
+        background-color:  rgb(202, 10, 240);
+        font-size: 15px;
+    }
+}
+@media (max-width:1200px) {
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .outer .content .left{
+        width: 150%;
+        height: 100%;
+    
+    }
+    .outer .content .left img{
+        padding: 20px 30px;
+        margin-left: 30px;
+        height: 90%;
+        width: 100%;
+    }
+
+    .outer .content .right{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items:flex-start;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .outer .content .right h3{
+        font-size: 18px;
+    }
+
+    .outer .content .right input{
+        height: 40px;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 15px;
+        font-size: 13px;
+    }
+    
+    .outer .content .right textarea{
+        margin-top: 10px;
+        width: 100%;
+        height: 150px;
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .outer .content .right .login input{
+        color: #fff;
+        background-color:  rgb(202, 10, 240);
+        font-size: 15px;
+    }
+}
+@media (max-width:900px) {
+
+
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+}
+@media (max-width:830px) {
+
+
+    .outer{
+        width: 70%;
+        background-color: rgb(255, 255, 255);
+        height: 48%;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .outer .content .right{
+        width: 100%;
+        height: 100%;
+        padding: 20px 40px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .outer .content .right form h3{
+        font-size: 15px;
+    }
+    .outer .content .right .user{
+        position: relative;
+        height: 30px;
+        padding-top: -5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .outer .content .right input{
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 15px;
+        background-color: #db3edb28;
+        border-radius: 5px;
+        border: none;
+    }
+    .outer .content .right form .user span{
+        font-size: 10px;
+        padding: 18px 12px;
+    }
+    .outer .content .right form textarea{
+        font-size: 10px;
+    }
+    .outer .content .right form .login input{
+        height: 30px;
+        font-size: 12px;
+    }
+}
+@media (max-width:700px) {
+
+
+    .outer{
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .outer .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+    .outer .content .left{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    
+    }
+    .outer .content .left img{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        height: 80%;
+        width: 100%;
+    }
+
+    .outer .content .right{
+        width: 100%;
+        height: 100%;
+        padding: 30px 50px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .outer .content .right form{
+        width: 100%;
+        height: 100%;
+    }
+
+    .outer .content .right form h3{
+        font-size: 20px;
+    }
+    .outer .content .right .user{
+        height: 45px;
+        padding-top: -5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .outer .content .right input{
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 15px;
+        background-color: #db3edb28;
+        border-radius: 5px;
+        border: none;
+    }
+    .outer .content .right form .user span{
+        font-size: 14px;
+        padding: 22px 12px;
+    }
+    .outer .content .right form textarea{
+        font-size: 14px;
+    }
+    .outer .content .right form .login input{
+        height: 45px;
+        font-size: 14px;
+    }
+}
+

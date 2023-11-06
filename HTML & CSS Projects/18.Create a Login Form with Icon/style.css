@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( 105.6deg,  rgba(95,182,248,1) 7%, rgba(2,89,182,1) 77.4% );
+}
+
+.outer_container{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.outer_container .inner{
+    margin: 10px;
+}
+
+.outer_container .inner .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer_container .inner .title h2{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.outer_container .inner .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.outer_container .inner .btn .name{
+    height: 50px;
+    width: 60%;
+    background-color:  #3b5998;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer_container .inner .btn .name:hover{
+    transform: scale(0.95);
+    transition: all 0.43s;
+}
+.outer_container .inner .btn .name1:hover{
+    transform: scale(0.95);
+    transition: all 0.43s;
+}
+.outer_container .inner .btn .name1{
+    height: 50px;
+    width: 60%;
+    background-color:  #00acee;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer_container .inner form{
+    width: 100%;
+    margin-top: -15px;
+}
+
+.outer_container .inner form .contact{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.outer_container .inner form .contact input{
+    height: 50px;
+    width: 100%;
+    padding-left: 40px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    
+}
+.outer_container .inner form .contact i{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+.outer_container .inner form .pass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    font-size: 15px;
+}
+.outer_container .inner form .pass a{
+    text-decoration: none;
+    color: #00acee;
+}
+
+.outer_container .inner form .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+.outer_container .inner form .login:hover{
+    transform: scale(0.95);
+    transition: all 0.43s;
+}
+
+.outer_container .inner form .login input{
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient( 178.5deg,  rgba(122,231,248,1) 6.5%, rgba(86,118,191,1) 90.9% );
+    border: none;
+    border-radius: 5px;
+}
+
+.outer_container .inner form .sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+.outer_container .inner form .sign a{
+    text-decoration: none;
+    color: #00acee;
+}
+

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body{
+    background-color: antiquewhite;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer_container{
+    max-width: 700px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px 25px 20px 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 5px;
+}
+
+.outer_container header{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.outer_container nav{
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.outer_container nav label{
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.outer_container nav label i{
+    margin-right: 7px;
+}
+
+.outer_container nav label:hover{
+    background-color: aqua;
+}
+
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+#about:checked ~ nav label.about{
+    color: rgb(0, 0, 0);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+
+section .content{
+    display: none;
+    color: #fff;
+}
+
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5{
+    display: block;
+    color: black;
+}
+
+.outer_container section .title{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.outer_container section p{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(107, 107, 107);
+    text-align: justify;
+}

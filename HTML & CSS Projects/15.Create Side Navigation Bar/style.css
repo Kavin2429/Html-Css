@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100wh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Poppins';
+}
+
+.outer_left{
+    height: 100vh;
+    width: 22%;
+    background-color:  rgba(69, 69, 69, 0.993);
+    position: relative;    
+    left: -310px;
+}
+
+.outer_left input{
+    display:none;
+}
+.outer_left .menu_btn{
+    width: 100%;
+}
+.outer_left .menu_btn i{
+    position: absolute;
+    top: 20px;
+    font-size:20px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#btn:checked ~ .menu_btn{
+    left:310px;
+}
+
+#btn:checked ~ .menu_btn i::before{
+    content: "\f00d";
+}
+
+.outer_left .menu_head{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color:  rgba(62, 62, 62, 0.993);
+    color: white;
+    font-family: 'Poppins';
+}
+
+.outer_left nav{
+
+    background-color: rgba(69, 69, 69, 0.993);
+}
+
+.outer_left nav ul{
+    list-style: none;
+    
+}
+
+.outer_left nav ul li{
+    padding: 16px;
+    font-size: 16px;
+    padding-left: 60px;
+    border: 1px solid rgb(83, 83, 83);
+}
+.outer_left nav ul li:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.outer_left nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.outer_left nav ul li a i{
+    padding-right: 20px;
+    
+}
+
+.outer_left .social{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 15px;
+}
+.outer_left .social i{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(58, 58, 58, 0.58);
+}
+.outer_left .social i:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

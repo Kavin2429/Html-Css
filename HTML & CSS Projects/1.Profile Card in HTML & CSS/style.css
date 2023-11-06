@@ -1,0 +1,143 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    
+}
+
+.outercontainer{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+    padding-top: 10rem;
+}
+
+.outerbox{
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+.outerbox{
+    content: '';
+    position: absolute;
+    height: 20%;
+    width: 280px;
+    background-color: #87CEEB;
+    border-radius: 20px 20px 0 0px;
+
+}
+
+.outercontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.overall{
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgb(80, 80, 80);
+}
+
+img{
+    border-radius: 150px;
+    background-color: #87CEEB;
+    border: double 3px solid #87CEEB;
+    padding: 0.3rem;
+    object-fit: cover;
+    height:"150";
+    width:"150" ;
+    
+}
+
+.image{
+    padding-top: 1.5rem;   
+   
+}
+
+.image:hover{
+    transform: scale(1.1);
+    transition: all .42s;
+}
+
+.profilename{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Poppins;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+}
+.info{
+    font-size: small;
+    font-weight: 300;
+    font-family: Poppins;
+    padding-bottom: 0.3rem;
+}
+
+.socialmedia i{
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
+
+.socialmedia i:hover{
+    transform: scale(1.3);
+    transition: all .42s;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 9px;
+    font-weight: 500;
+    font-family: Poppins;
+    padding-top: 0.5rem;
+    
+}
+
+.action{
+    border: 1px solid #87CEEB;
+    padding: 3px 12px;
+    border-radius: 15px;
+    background-color: #87CEEB;
+}
+
+.action:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: all .42s;
+}
+
+.ratings{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+
+.ratingcount:hover{
+    transform: scale(1.3);
+    transition: all .42s;
+}
+
+.ratingcount{
+    font-size: 10px;
+}
+
+.line{
+    font-size: small;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    
+}

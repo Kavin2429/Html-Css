@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins';
+}
+
+.top-menu{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    background: #ecf0f3;
+}
+
+.top-menu .menu{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(251, 251, 251);
+    box-shadow:-3px -3px 7px #ffffff, 
+                3px 3px 5px #ceced1;
+    background: #ecf0f3;
+}
+
+.menu header{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #31344b;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.menu ul li{
+    list-style-type: none;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #31344b;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow:-3px -3px 7px #ffffff, 
+                3px 3px 5px #ceced1;
+    background: #ecf0f3;
+    position: relative;
+}
+
+.menu ul li a:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow:inset -3px -3px 7px #ffffff, 
+            inset 3px 3px 5px #ceced1;
+}
+
+.menu ul li a:hover{
+    color: rgb(78, 175, 175);
+}

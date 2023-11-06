@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Poppins;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containar {
+    background: #20002c; 
+    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);
+    background: linear-gradient(to right, #cbb4d4, #20002c); 
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: absolute;
+    height: 225px;
+    width: 377px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+
+}
+.containar:hover {
+    transform: scale(1.2);
+    transition: all .42s;
+    
+}
+
+.containar .inner{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.inner .head{
+    display: flex;
+    justify-content: space-between;
+}
+.inner .head img{
+    height: 30px;
+    width: 50px;
+}
+.inner .head h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 6px;
+    color: white;
+}
+.inner .chip img{
+    height: 40px;
+    width: 60px;
+    margin-left: -80%;
+}
+
+.inner .card-det{
+    color: white;
+    position: absolute;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 20%;
+    width: 100%;
+}
+.inner .card-det h6{
+    font-weight: 400;
+    font-size: 10px;
+  
+}
+.inner .card-det h2{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+  
+}
+.inner .card-valid{
+    color: white;
+    position: absolute;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.inner .card-valid h2{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.inner .card-det h5{
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    margin-left: 72%;
+    margin-top: 6px;
+}
+.inner .card-valid h3{
+    margin-left: 27%;
+    font-size: 19px;
+    font-weight: 400;
+}

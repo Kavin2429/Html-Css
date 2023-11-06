@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    text-decoration: none;
+    background-image: url(./image/Groot.jpg);
+    background-position: center;
+    background-size: auto;
+    background-size: cover;
+    font-family: Poppins, sans-serif;
+    
+}
+
+.outer-container{
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    display: flex;
+    background: rgba(255,255,255,0.1);
+    opacity: 1;
+    position: relative;
+}
+
+.main .menu{
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    top: 15px;
+    letter-spacing: 3px;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    border: 1px solid rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+     
+}
+
+.main .menu:hover,
+.main span i:hover{
+    
+    box-shadow: rgba(7, 108, 224, 0.489) 0px 0px 0px 3px;
+    transform: scale(1.1);
+    transition: all 0.42s;
+}
+
+.main span i{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+   top: 13px;
+    padding: 18px;
+    padding-right: -8px;
+}
+.main .sidebar{
+    margin-top: 100px;
+}
+.main .sidebar ul{
+    position: relative;
+   align-content: space-between;
+   list-style-type: none;
+}
+.main .sidebar ul li{
+    padding: 1rem;
+    font-size: 18px;
+    width: 100%;
+}
+
+.main .sidebar ul li:hover{
+    width: 280px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: scaleY(1);
+    transition: all 0.42s;
+    border-left: 2px solid white;
+}
+
+.main .sidebar ul li a{
+   margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-family:'Poppins';
+}
+.main .sidebar ul li i{
+   margin-right: 20px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    margin-left: 14%;
+    bottom: 10px;
+}
+.foot i{
+    font-size: 27px;
+    opacity: 1;
+    color: white;
+    padding-left: 1rem;
+}
+
+.foot i:hover{
+    color: rgba(64, 244, 232, 255);
+    transform: scale(1.2);
+    transition: all 0.42s;
+}

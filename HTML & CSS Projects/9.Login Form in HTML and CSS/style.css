@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+}
+
+.login-container{
+    position: relative;
+    border: 1px solid black;
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.login-container header{
+    height: 100px;
+}
+
+.login-container header h3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Poppins';
+    background-image: linear-gradient( 109.6deg,  rgba(69,179,224,1) 11.2%, rgba(102,51,153,1) 100.2% );
+    border-radius: 10px 10px 0px 0;
+    color: white;
+}
+
+.login-container form .field{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.login-container form .field input{
+   
+    width: 80%;
+    height: 40px;
+    margin-top: 18px;
+    border-radius: 25px;
+    border: solid rgba(22, 22, 22, 0.218);
+    padding: 20px;
+   
+}
+
+.login-container form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-30%);
+    pointer-events: none;
+}
+
+
+.login-container form input:hover{
+    top: 0;
+    transform: scale(0.9);
+    border: solid rgba(22, 22, 22, 0.218);
+    transition: all 0.43s ease;
+}
+
+.login-container .forgot{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 13px;
+   padding: 10px;
+}
+
+
+.login-container .forgot a{
+    text-decoration: none;
+}
+
+.login-container .btn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container .btn input{
+    width: 80%;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-image: linear-gradient( 109.6deg,  rgba(69,179,224,1) 11.2%, rgba(102,51,153,1) 100.2% );
+    color: white;
+}
+
+.login-container .btn:hover{
+    transform: scale(0.9);
+    transition: all 0.42s;
+    
+}
+
+.login-container .sign-up{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}

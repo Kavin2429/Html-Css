@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( 358.3deg,  rgba(255,82,168,1) 12.9%, rgba(177,118,240,1) 134.3% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+body::before,
+body::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+body::before{
+    clip-path: circle(30% at left 20%);
+    background-image: linear-gradient( 109.6deg,  rgba(253,145,232,1) 11.2%, rgba(250,42,137,1) 89% );
+}
+body::after{
+    clip-path: circle(25% at right 80%);
+    background-image: linear-gradient( 109.6deg,  rgba(253,145,232,1) 11.2%, rgba(250,42,137,1) 89% );
+}
+::selection{
+    background-color: white;
+}
+
+
+.outer{
+    position: relative;
+    height: 90%;
+    width: 90%;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    backdrop-filter: blur(5px);
+}
+
+.outer .nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.outer .nav_bar .logo h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.outer .nav_bar .main-menu ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.outer .nav_bar .main-menu li{
+    margin: 10px;
+    font-size: 12px;
+}
+.outer .nav_bar .main-menu li a:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.42s;
+}
+
+.outer .nav_bar .main-menu ul li a{
+    color: rgba(0, 0, 0, 0.589);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.outer .nav_bar .sign input{
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 7px;
+    background-image: linear-gradient( 109.6deg,  rgba(253,145,232,1) 11.2%, rgba(250,42,137,1) 89% );
+    border: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.outer .nav_bar .sign input:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.42s;
+    transform: scale(1.1);
+}
+
+.outer .main{
+    padding: 50px;
+    width: 60%;
+    padding-top: 100px;
+    position: relative;
+}
+
+.outer .main div{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.outer .main p{
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: rgba(24, 24, 24, 0.904);
+    text-align: start;
+}
+
+.outer .end{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    
+
+}
+.outer .end .linee{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding: 40px 40px;
+}
+
+.outer .end .line{
+    height: 3px;
+    width: 40px;
+    background-color: black;
+}
+
+.outer .end .video{
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.outer .end .linee i{
+    font-size: 40px;
+
+}
+
+
+
+@media (max-width:900px) {
+    body{
+        width: 100%;
+    }
+    .outer .main{
+        padding: 50px;
+        width: 100%;
+        padding-top:100px;
+        position: relative;
+        max-height: 150px;
+        transition: all 0.42s;
+    }
+    
+}
+@media (max-width:750px) {
+    body{
+        width: 100%;
+    }
+    .outer .nav_bar{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.42s;
+    }
+    .outer .main{
+        padding: 50px;
+        width: 100%;
+        padding-top: 50px;
+        position: relative;
+        max-height: 150px;
+        transition: all 0.42s;
+    }
+
+    .outer .end .linee{
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 40px;
+    }
+}
+@media (max-width:550px) {
+    body{
+        width: 100%;
+    }
+    .outer .nav_bar{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.42s;
+    }
+    .outer .main{
+        padding: 20px;
+        width: 100%;
+        padding-top: 10px;
+        position: relative;
+        max-height: 150px;
+        transition: all 0.42s;
+    }
+
+    .outer .end .linee{
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 40px;
+    }
+}
+@media (max-width:400px) {
+    body{
+        width: 100%;
+    }
+    .outer .nav_bar{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.42s;
+    }
+    .outer .main{
+        padding: 20px;
+        width: 100%;
+        padding-top: 10px;
+        position: absolute;
+        max-height: 700px;
+        transition: all 0.42s;
+    }
+    .outer .main div{
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .outer .main p{
+        font-size: 13px;
+        margin-top: 10px;
+        font-weight: 400;
+        color: rgba(24, 24, 24, 0.904);
+        text-align: start;
+    }
+    
+
+    .outer .end .linee{
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+}
+@media (max-width:330px) {
+    body{
+        width: 100%;
+    }
+    .outer .nav_bar{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.42s;
+    }
+    .outer .main{
+        padding: 20px;
+        width: 100%;
+        padding-top: 10px;
+        position: absolute;
+        max-height: 700px;
+        transition: all 0.42s;
+    }
+    .outer .main div{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .outer .main p{
+        font-size: 12px;
+        margin-top: 10px;
+        font-weight: 400;
+        color: rgba(24, 24, 24, 0.904);
+        text-align: start;
+    }
+    
+
+    .outer .end .linee{
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 40px;
+    }
+}

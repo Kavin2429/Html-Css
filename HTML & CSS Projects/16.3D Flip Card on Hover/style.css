@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(58,121,118,1) 0%, rgba(157,212,177,1) 90.1% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+.outer-container{
+    position: relative;
+    height: 430px;
+    width: 350px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.outer-container .design{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+.outer-container:hover > .design{
+    transform: rotateY(-180deg);
+    transition: all 0.42s;
+}
+
+
+.outer-container .front{
+    background-image: url(./image/wallpaperflare.com_wallpaper\ \(5\).jpg);
+    background-position: center;
+    background-size: cover;
+    border: 5px solid white;
+}
+
+.outer-container .back{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+}
+
+.outer-container:hover > .back{
+    transform: rotateY(0deg);
+    transition: all 0.42s;
+}
+
+.outer-container .back .profile{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer-container .back .profile img{
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    border: 7px solid rgb(144, 235, 102);
+}
+
+.outer-container .design h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.outer-container .design p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.583);
+}
+
+.outer-container .design .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.outer-container .design .social i{
+    font-size: 20px;
+    background-color: rgba(52, 218, 168, 0.754);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.outer-container .design .social i:hover{
+    border: 3px solid rgba(52, 218, 168, 0.754);
+    color: rgba(52, 218, 168, 0.754);
+    background-color: white;
+    transition: all 0.42s;
+    overflow: hidden;
+}
+
